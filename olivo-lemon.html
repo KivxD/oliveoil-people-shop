@@ -40,9 +40,11 @@
           <li class="mt-6 lg:mt-0 lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;">BUSINESSES
             <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
           </li>
+          <a href="landing-page.html">
           <li class="mt-6 lg:mt-0 lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;">BLOG
             <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
           </li>
+          </a>
         </ul>
       </div>
 
@@ -91,9 +93,14 @@
           <p class="tracking-wide">June 2020</p>
         </div>
 
-        <div class="flex justify-center items-center mt-8">
+        <div class="">
+          <p class="text-center font-bold mt-6">200ml</p>
+        </div>
 
-          <div id='product-component-1611594915186'></div>
+
+        <div class="flex justify-center items-center mt-2">
+
+          <div id='product-component-1611650383850'></div>
           <script type="text/javascript">
           /*<![CDATA[*/
           (function () {
@@ -122,7 +129,7 @@
               ShopifyBuy.UI.onReady(client).then(function (ui) {
                 ui.createComponent('product', {
                   id: '6245121196225',
-                  node: document.getElementById('product-component-1611594915186'),
+                  node: document.getElementById('product-component-1611650383850'),
                   moneyFormat: '%24%7B%7Bamount%7D%7D',
                   options: {
             "product": {
@@ -133,13 +140,27 @@
                     "margin-left": "20px",
                     "margin-bottom": "50px"
                   }
+                },
+                "price": {
+                  "font-size": "16px",
+                  "color": "#000000"
+                },
+                "compareAt": {
+                  "font-size": "13.6px",
+                  "color": "#000000"
+                },
+                "unitPrice": {
+                  "font-size": "13.6px",
+                  "color": "#000000"
                 }
               },
+
               "contents": {
                 "img": false,
                 "title": false,
-                "price": false
+                "price": true,
               },
+
               "text": {
                 "button": "Add to cart"
               }
@@ -186,7 +207,7 @@
           })();
           /*]]>*/
           </script>
-          
+
         </div>
 
 

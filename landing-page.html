@@ -7,32 +7,50 @@
   <title>Oliveoil People</title>
   <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="navstyles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.slider').bxSlider({
+        minSlides: 1,
+        maxSlides: 1,
+        slideWidth: 1000,
+        shrinkItems: true
+      });
+
+    });
+  </script>
+
 </head>
 
 <body>
 
-  <header class="flex w-full h-24 overflow-hidden fixed">
+  <header class="flex w-full h-24 overflow-hidden fixed z-50">
 
     <nav class="flex w-full h-24 text-xl justify-around items-center overflow-hidden" style="background-color: #cecac8;">
 
 
-        <div class="flex flex-col items-center justify-center h-24 lg:w-1/4 p-4">
-          <a class="flex flex-col items-center justify-center" href="index.html">
-            <p style="color: #cb483b; font-size: 1.5em; letter-spacing: 3.5px;">oliveoilpeople</p>
-            <p style="color: #cb483b; font-size: 0.5em; letter-spacing: 5px;">SINGAPORE</p>
-          </a>
-        </div>
+      <div class="flex flex-col items-center justify-center h-24 lg:w-1/4 p-4">
+        <a class="flex flex-col items-center justify-center" href="index.html">
+          <p style="color: #cb483b; font-size: 1.5em; letter-spacing: 3.5px;">oliveoilpeople</p>
+          <p style="color: #cb483b; font-size: 0.5em; letter-spacing: 5px;">SINGAPORE</p>
+        </a>
+      </div>
 
 
-      <div
-        class="fixed lg:relative right-0 top-0 mt-24 lg:mt-0 lg:top-auto lg:right-auto h-full lg:h-24 w-1/2 lg:w-auto lg:relative flex justify-center items-center align-middle transform translate-x-full lg:translate-x-0" style="transition-duration: 800ms; background-color: #cecac8;"
-        id="menu">
+      <div class="fixed lg:relative right-0 top-0 mt-24 lg:mt-0 lg:top-auto lg:right-auto h-full lg:h-24 w-1/2 lg:w-auto lg:relative flex justify-center items-center align-middle transform translate-x-full lg:translate-x-0"
+        style="transition-duration: 800ms; background-color: #cecac8;" id="menu">
 
 
         <ul class="flex flex-col lg:flex-row justify-center items-center -mt-24 lg:mt-0 h-40 lg:h-24 navLinks lg:opacity-100">
-          <li class="lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;">SHOP
-            <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
-          </li>
+          <a href="shopevoo.html">
+            <li class="lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;">SHOP
+              <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
+            </li>
+          </a>
           <li class="mt-6 lg:mt-0 lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;">BUYING TIPS
             <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
           </li>
@@ -58,7 +76,7 @@
   </header>
 
 
-  <main class="p-12 flex flex-col items-center">
+  <main class="p-12 flex flex-col items-center min-h-screen relative bg-white z-10">
 
     <!-- <div class="flex flex-col justify-center h-full lg:flex-row overflow-hidden mt-16">
 
@@ -93,12 +111,23 @@
       </div>
 
     </div> -->
-
-    <div class="h-screen w-screen bg-gray-700">
+    <div class="mt-16 z-0">
+      <div class="slider">
+        <div class="">
+          <img src="assets/growers.jpeg" alt="">
+        </div>
+        <div class="">
+          <img src="assets/homecooks.jpeg" alt="">
+        </div>
+      </div>
 
     </div>
 
-    <div class="flex flex-col lg:flex-row justify-center items-center mt-16">
+    <div class="flex justify-center items-center mt-4">
+      <p class="text-3xl font-bold">WHY US?</p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row justify-center items-center mt-8">
 
       <div class="my-5 lg:w-3/6">
         <img class="object-cover" src="assets/growers.jpeg" alt="growers-img">
@@ -180,6 +209,20 @@
 
 
   </main>
+
+  <footer class="sticky bottom-0 top-0" style="z-index: 1;">
+
+
+    <div class="h-64 w-full flex justify-center items-center" style="background-color: #cecac8;">
+
+      <p class="text-justify p-10 text-xl" style="color: #cb483b;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+
+
+  </footer>
+
 
   <script src="app.js">
 
