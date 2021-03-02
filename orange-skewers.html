@@ -4,13 +4,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OLIVO LEMON</title>
+  <title>Oliveoil People</title>
+  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="navstyles3.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(window).on('load', function() {
+      $('.slider').bxSlider({
+        minSlides: 1,
+        maxSlides: 1,
+        slideWidth: 1200,
+        shrinkItems: true,
+        touchEnabled: false
+      });
+
+    });
+  </script>
+
 </head>
 
 <body>
 
-  <header class="flex flex-col w-full h-32 overflow-hidden fixed z-50">
+  <header class="flex w-full h-24 overflow-hidden fixed z-50">
 
     <nav class="flex w-full h-24 text-xl justify-around items-center overflow-hidden" style="background-color: #cecac8;">
 
@@ -59,231 +78,73 @@
       </div>
 
     </nav>
-
-    <div class="w-full" style="background-color: #B99E56;">
-      <p class="text-white text-center">Enjoy free shipping for purchases of S$120 & above. Receive your products within 3 days.</p>
-    </div>
-
   </header>
 
+  <main class="p-12 flex flex-col justify-center items-center min-h-screen relative bg-white z-10">
+    <div class="w-screen h-screen flex">
+      <div class="h-full w-1/2">
+        <img class="h-full  object-cover" src="assets/orange-skewers-lg.jpg" alt="">
+      </div>
 
-  <main class="p-12 pt-24 flex flex-col justify-center items-center min-h-screen relative bg-white z-10">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <div class="w-full">
+          <p class="text-center text-yellow-700 text-3xl font-bold">Cinnamon Orange Skewers</p>
+        </div>
 
+        <div class="mt-8" style="max-width: 65ch;">
+          <p class="text-center font-bold">Fruity is a MUST</p>
+          <p class="text-center">Olive oil can only be graded as extra virgin when it is fruity. Fruitiness ranges widely from fresh grass, citruses, green tomatoes, peppery veggies like arugula and even green bananas!</p>
+        </div>
 
-    <div class="flex flex-col justify-center items-center my-10">
+        <div class="mt-8" style="max-width: 65ch;">
+          <p class="text-center font-bold">Olive Oil Matching</p>
+          <p class="text-center">Try Olivo’s Koroneiki extra virgin olive oil with this easy recipe. Its intensely fresh green fruitiness enhances the sweet-quenching orange slices, while cinnamon highlights the slow peppery entrance of an exceptional olive oil</p>
+        </div>
 
-      <div class="flex justify-center items-center mx-10 mt-10 mb-5">
-
-        <img class="w-full lg:w-3/6" src="assets/olivo-lemon.jpg" alt="placeholder">
 
       </div>
 
-      <div class="flex flex-col justify-center items-center">
 
-        <p class="font-bold mb-3 text-lg">OLIVO LEMON</p>
-        <p class="text-lg m-1">Infused olive oil</p>
-        <p class="text-lg italic text-sm mt-1">Zesty & easy over sweet or savory</p>
+    </div>
 
+    <div class="w-40 border border-black mt-32">
+
+    </div>
+
+    <div class="h-screen">
+      <div class="text-center mt-24">
+        <h1 class="text-3xl font-bold">How to make this.</h1>
+      </div>
+
+      <div class="text-center text-xl mt-20">
+        <p class="font-bold">1 tbsp Olivo Koroneiki</p>
+        <p class="font-bold">1 large Valencia orange</p>
+        <p class="font-bold">Cinnamon sugar mixture – 4 tsp raw sugar to 1 1⁄2 tsp cinnamon powder, mixed well</p>
+        <p class="font-bold">2 bamboo skewers</p>
+      </div>
+
+      <div class="text-center text-xl mt-10" style="max-width: 100ch;">
+        <p>With a sharp knife peel orange and remove as much of the white parts around the orange as possible. Cut into 8 bite-sized cubes for skewers (or sliced into large wheels if not using skewers).</p>
+      </div>
+
+      <div class="text-center text-xl mt-10" style="max-width: 100ch;">
+        <p>Skewer 4 orange cubes with one bamboo skewer. Sprinkle cinnamon sugar on platter, roll orange skewer in it and drizzle with 1⁄2 tbsp Olivo Koroneiki. One orange makes 2 skewers.</p>
+      </div>
+
+      <div class="text-center text-xl mt-10" style="max-width: 100ch;">
+        <p>Alternatively, arrange orange wheels on a platter and sprinkle all of the cinnamon sugar mixture all over. Drizzle extra virgin olive oil all over.</p>
+      </div>
+
+      <div class="text-center text-xl mt-10" style="max-width: 100ch;">
+        <p class="font-bold">Tips:</p>
+        <p>Increase the proportion of cinnamon powder to highlight peppery qualities of the olive oil.
+          Serve skewers in a glass to make it easy to slurp up the remaining delicious extra virgin and cinnamon orange juice.</p>
       </div>
 
     </div>
 
-    <div class="flex flex-col lg:flex-row justify-center items-center my-5">
-
-      <div class="m-5 lg:w-3/6">
-
-        <div class="flex flex-col justify-center items-center">
-          <p class="font-bold tracking-wide">Origin</p>
-          <p class="tracking-wide">Martinborough, Wairarapa, New Zealand</p>
-        </div>
-
-        <div class="flex flex-col justify-center items-center mt-4">
-          <p class="font-bold tracking-wide">Harvest/Pressed</p>
-          <p class="tracking-wide">June 2020</p>
-        </div>
-
-        <div class="">
-          <p class="text-center font-bold mt-6">200ml</p>
-        </div>
-
-
-        <div class="flex justify-center items-center mt-2">
-
-          <div id='product-component-1611650383850'></div>
-          <script type="text/javascript">
-          /*<![CDATA[*/
-          (function () {
-            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-            if (window.ShopifyBuy) {
-              if (window.ShopifyBuy.UI) {
-                ShopifyBuyInit();
-              } else {
-                loadScript();
-              }
-            } else {
-              loadScript();
-            }
-            function loadScript() {
-              var script = document.createElement('script');
-              script.async = true;
-              script.src = scriptURL;
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-              script.onload = ShopifyBuyInit;
-            }
-            function ShopifyBuyInit() {
-              var client = ShopifyBuy.buildClient({
-                domain: 'olive-oil-people.myshopify.com',
-                storefrontAccessToken: 'fcaab69b07289a692570fa1cfa4da4e4',
-              });
-              ShopifyBuy.UI.onReady(client).then(function (ui) {
-                ui.createComponent('product', {
-                  id: '6245121196225',
-                  node: document.getElementById('product-component-1611650383850'),
-                  moneyFormat: '%24%7B%7Bamount%7D%7D',
-                  options: {
-            "product": {
-              "styles": {
-                "product": {
-                  "@media (min-width: 601px)": {
-                    "max-width": "calc(25% - 20px)",
-                    "margin-left": "20px",
-                    "margin-bottom": "50px"
-                  }
-                },
-                "price": {
-                  "font-size": "16px",
-                  "color": "#000000"
-                },
-                "compareAt": {
-                  "font-size": "13.6px",
-                  "color": "#000000"
-                },
-                "unitPrice": {
-                  "font-size": "13.6px",
-                  "color": "#000000"
-                }
-              },
-
-              "contents": {
-                "img": false,
-                "title": false,
-                "price": true,
-              },
-
-              "text": {
-                "button": "Add to cart"
-              }
-            },
-            "productSet": {
-              "styles": {
-                "products": {
-                  "@media (min-width: 601px)": {
-                    "margin-left": "-20px"
-                  }
-                }
-              }
-            },
-            "modalProduct": {
-              "contents": {
-                "img": false,
-                "imgWithCarousel": true,
-                "button": false,
-                "buttonWithQuantity": true
-              },
-              "styles": {
-                "product": {
-                  "@media (min-width: 601px)": {
-                    "max-width": "100%",
-                    "margin-left": "0px",
-                    "margin-bottom": "0px"
-                  }
-                }
-              },
-              "text": {
-                "button": "Add to cart"
-              }
-            },
-            "cart": {
-              "text": {
-                "total": "Subtotal",
-                "button": "Checkout"
-              }
-            }
-          },
-                });
-              });
-            }
-          })();
-          /*]]>*/
-          </script>
-
-        </div>
-
-
-
-      </div>
-
-      <div class="m-10 lg:px-10 lg:w-3/6">
-
-        <div class="flex flex-col">
-
-          <p class="text-center">Olivo’s best-selling infused olive oil made with oil from the rind of the lemons and extra virgin olive oil.
-          </p>
-
-        </div>
-        <div class="flex flex-col">
-
-          <p class="text-center font-bold mt-3">Taste</p>
-          <p class="text-center">Bursting with lemon zest alongside fresh herbal notes.
-          </p>
-
-        </div>
-        <div class="flex flex-col">
-
-          <p class="text-center font-bold mt-3">Flavor Pairing
-          </p>
-          <p class="text-center">Adds a zesty accent to green vegetables, fish or chicken.
-          </p>
-
-        </div>
-
-        <div class="">
-          <p class="text-center">Superb over vanilla ice-cream and sea salt.</p>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="flex justify-center items-center my-5">
-      <div class="h-1 w-56 border-b-2 border-black">
-
-      </div>
-    </div>
-
-    <div class="flex justify-center items-center mt-10">
-
-      <p class="font-bold">Grower</p>
-
-    </div>
-
-
-    <div class="flex flex-col lg:flex-row justify-center items-center">
-
-      <div class="my-5 lg:3/6">
-        <img src="assets/story-placeholder.png" alt="story">
-      </div>
-
-      <div class="my-10 mx-10 lg:mx-16 lg:w-3/6">
-        <p class="font-semibold text-justify">The Wairarapa region has a maritime climate different from traditional olive-growing countries, giving us a distinctive and complex tasting oils.
-        </p>
-
-        <p class="text-justify mt-5">Olivo is the oldest commercial grove in the Wairarapa region of New Zealand, established in 1991 and has been awarded “Best Brand Award” by Olives New Zealand. Their intent is to create innovative and top quality
-          olive oils that pair with
-          excellent food and the great wines that Martinborough produces – olive oils that are boutique, artisanal and gorgeous. 
-        </p>
-      </div>
-
+    <div class="text-xl text-center mt-32">
+      <a href="tips-recipes.html"><p class="font-bold">BACK TO TIPS & RECIPES</p></a>
     </div>
 
 

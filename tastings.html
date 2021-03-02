@@ -4,13 +4,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OLIVO LEMON</title>
+  <title>Oliveoil People</title>
+  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="navstyles3.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(window).on('load', function() {
+      $('.slider').bxSlider({
+        minSlides: 1,
+        maxSlides: 1,
+        slideWidth: 1200,
+        shrinkItems: true,
+        touchEnabled: false
+      });
+
+    });
+  </script>
+
 </head>
 
 <body>
 
-  <header class="flex flex-col w-full h-32 overflow-hidden fixed z-50">
+  <header class="flex w-full h-24 overflow-hidden fixed z-50">
 
     <nav class="flex w-full h-24 text-xl justify-around items-center overflow-hidden" style="background-color: #cecac8;">
 
@@ -59,233 +78,88 @@
       </div>
 
     </nav>
-
-    <div class="w-full" style="background-color: #B99E56;">
-      <p class="text-white text-center">Enjoy free shipping for purchases of S$120 & above. Receive your products within 3 days.</p>
-    </div>
-
   </header>
 
+  <main class="p-12 flex flex-col justify-center items-center min-h-screen relative bg-white z-10">
+    <div class="w-screen h-screen flex flex-col lg:flex-row mb-48 lg:mb-0">
+      <div class="h-full w-full lg:w-3/4">
+        <img class="h-full  object-cover" src="assets/tasters.jpeg" alt="">
+      </div>
 
-  <main class="p-12 pt-24 flex flex-col justify-center items-center min-h-screen relative bg-white z-10">
+      <div class="w-full h-full flex flex-col justify-center items-center px-8">
+        <div class="w-full mt-12 lg:mt-0">
+          <p class="text-center text-3xl font-bold">Taste the difference with us.</p>
+        </div>
 
+        <div class="mt-8" style="max-width: 70ch;">
+          <p class="text-center">We believe the proof is in the palate. We carefully taste and curate every harvest season to bring you an array of taste
+          profiles.
+          </p>
+        </div>
 
-    <div class="flex flex-col justify-center items-center my-10">
+        <div class="mt-8" style="max-width: 70ch;">
+          <p class="text-center">If you’d like to join us to discover the world of olive oil tasting, here are the various ways you can do so.
+          </p>
+        </div>
 
-      <div class="flex justify-center items-center mx-10 mt-10 mb-5">
+        <div class="mt-8" style="max-width: 70ch;">
+          <p class="text-center">Get in touch with us to find out more!
+          </p>
+        </div>
 
-        <img class="w-full lg:w-3/6" src="assets/olivo-lemon.jpg" alt="placeholder">
+        <div class="rounded-md mt-10" style="background-color: #cb483b;">
+          <button onclick="newTab() "><p class="text-xl text-white font-bold px-10">Connect Now</p></button>
+        </div>
+
 
       </div>
 
-      <div class="flex flex-col justify-center items-center">
-
-        <p class="font-bold mb-3 text-lg">OLIVO LEMON</p>
-        <p class="text-lg m-1">Infused olive oil</p>
-        <p class="text-lg italic text-sm mt-1">Zesty & easy over sweet or savory</p>
-
-      </div>
 
     </div>
 
-    <div class="flex flex-col lg:flex-row justify-center items-center my-5">
-
-      <div class="m-5 lg:w-3/6">
-
-        <div class="flex flex-col justify-center items-center">
-          <p class="font-bold tracking-wide">Origin</p>
-          <p class="tracking-wide">Martinborough, Wairarapa, New Zealand</p>
-        </div>
-
-        <div class="flex flex-col justify-center items-center mt-4">
-          <p class="font-bold tracking-wide">Harvest/Pressed</p>
-          <p class="tracking-wide">June 2020</p>
-        </div>
-
-        <div class="">
-          <p class="text-center font-bold mt-6">200ml</p>
-        </div>
-
-
-        <div class="flex justify-center items-center mt-2">
-
-          <div id='product-component-1611650383850'></div>
-          <script type="text/javascript">
-          /*<![CDATA[*/
-          (function () {
-            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-            if (window.ShopifyBuy) {
-              if (window.ShopifyBuy.UI) {
-                ShopifyBuyInit();
-              } else {
-                loadScript();
-              }
-            } else {
-              loadScript();
-            }
-            function loadScript() {
-              var script = document.createElement('script');
-              script.async = true;
-              script.src = scriptURL;
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-              script.onload = ShopifyBuyInit;
-            }
-            function ShopifyBuyInit() {
-              var client = ShopifyBuy.buildClient({
-                domain: 'olive-oil-people.myshopify.com',
-                storefrontAccessToken: 'fcaab69b07289a692570fa1cfa4da4e4',
-              });
-              ShopifyBuy.UI.onReady(client).then(function (ui) {
-                ui.createComponent('product', {
-                  id: '6245121196225',
-                  node: document.getElementById('product-component-1611650383850'),
-                  moneyFormat: '%24%7B%7Bamount%7D%7D',
-                  options: {
-            "product": {
-              "styles": {
-                "product": {
-                  "@media (min-width: 601px)": {
-                    "max-width": "calc(25% - 20px)",
-                    "margin-left": "20px",
-                    "margin-bottom": "50px"
-                  }
-                },
-                "price": {
-                  "font-size": "16px",
-                  "color": "#000000"
-                },
-                "compareAt": {
-                  "font-size": "13.6px",
-                  "color": "#000000"
-                },
-                "unitPrice": {
-                  "font-size": "13.6px",
-                  "color": "#000000"
-                }
-              },
-
-              "contents": {
-                "img": false,
-                "title": false,
-                "price": true,
-              },
-
-              "text": {
-                "button": "Add to cart"
-              }
-            },
-            "productSet": {
-              "styles": {
-                "products": {
-                  "@media (min-width: 601px)": {
-                    "margin-left": "-20px"
-                  }
-                }
-              }
-            },
-            "modalProduct": {
-              "contents": {
-                "img": false,
-                "imgWithCarousel": true,
-                "button": false,
-                "buttonWithQuantity": true
-              },
-              "styles": {
-                "product": {
-                  "@media (min-width: 601px)": {
-                    "max-width": "100%",
-                    "margin-left": "0px",
-                    "margin-bottom": "0px"
-                  }
-                }
-              },
-              "text": {
-                "button": "Add to cart"
-              }
-            },
-            "cart": {
-              "text": {
-                "total": "Subtotal",
-                "button": "Checkout"
-              }
-            }
-          },
-                });
-              });
-            }
-          })();
-          /*]]>*/
-          </script>
-
-        </div>
-
-
-
-      </div>
-
-      <div class="m-10 lg:px-10 lg:w-3/6">
-
-        <div class="flex flex-col">
-
-          <p class="text-center">Olivo’s best-selling infused olive oil made with oil from the rind of the lemons and extra virgin olive oil.
-          </p>
-
-        </div>
-        <div class="flex flex-col">
-
-          <p class="text-center font-bold mt-3">Taste</p>
-          <p class="text-center">Bursting with lemon zest alongside fresh herbal notes.
-          </p>
-
-        </div>
-        <div class="flex flex-col">
-
-          <p class="text-center font-bold mt-3">Flavor Pairing
-          </p>
-          <p class="text-center">Adds a zesty accent to green vegetables, fish or chicken.
-          </p>
-
-        </div>
-
-        <div class="">
-          <p class="text-center">Superb over vanilla ice-cream and sea salt.</p>
-        </div>
-
-      </div>
+    <div class="w-40 border border-black mt-80 lg:mt-32">
 
     </div>
 
-    <div class="flex justify-center items-center my-5">
-      <div class="h-1 w-56 border-b-2 border-black">
+    <div class=" mt-12 lg:mt-0">
 
-      </div>
-    </div>
-
-    <div class="flex justify-center items-center mt-10">
-
-      <p class="font-bold">Grower</p>
-
-    </div>
-
-
-    <div class="flex flex-col lg:flex-row justify-center items-center">
-
-      <div class="my-5 lg:3/6">
-        <img src="assets/story-placeholder.png" alt="story">
+      <div class="text-center mt-10" style="max-width: 100ch;">
+        <p class="font-bold text-3xl">Extra Virgin Olive Oil Tasting</p>
       </div>
 
-      <div class="my-10 mx-10 lg:mx-16 lg:w-3/6">
-        <p class="font-semibold text-justify">The Wairarapa region has a maritime climate different from traditional olive-growing countries, giving us a distinctive and complex tasting oils.
-        </p>
-
-        <p class="text-justify mt-5">Olivo is the oldest commercial grove in the Wairarapa region of New Zealand, established in 1991 and has been awarded “Best Brand Award” by Olives New Zealand. Their intent is to create innovative and top quality
-          olive oils that pair with
-          excellent food and the great wines that Martinborough produces – olive oils that are boutique, artisanal and gorgeous. 
+      <div class="text-center mt-10" style="max-width: 100ch;">
+        <p>We are more than happy to discuss your specific needs for tasting events. As a starting point, here are the formats we offer.
         </p>
       </div>
 
-    </div>
+      <div class="text-center mt-10" style="max-width: 100ch;">
+        <p class="font-bold " style="color: #cb483b;">Tasting workshops</p>
+        <p>From time to time, we will publish details about upcoming workshops. Typically two hours and is structured and guided for min. 4 pax and max. 8. Organized and held at our selected venue. Depending on the nature of the event, they may be free or paid.
+        </p>
+      </div>
+      <div class="text-center mt-10" style="max-width: 100ch;">
+        <p class="font-bold " style="color: #cb483b;">Private tasting sessions</p>
+        <p>Similar to tasting workshops at a venue of your choice. More customizable to your needs. These are paid events organized by you with our support, for your guests. We recommended no more than 6 guests, for an optimal experience for your guests.
+        </p>
+      </div>
 
+      <div class="text-center mt-10" style="max-width: 100ch;">
+        <p class="font-bold " style="color: #cb483b;">Virtual tastings</p>
+        <p>Schedule-specific sessions that we offer. Once you sign-up, we send you a tasting kit that includes three 50ml olive oil samples along with simple instructions on what to prepare for the tasting. You will receive the tasting kit between 3-7 days before the virtual tasting. Each session is about one hour and guided.
+        </p>
+      </div>
+
+      <div class="text-center mt-10" style="max-width: 100ch;">
+        <p class="italic">We are committed to organizing safe and compliant experiences at our tastings. We do this in consultation with the relevant authorities. For your comfort and assurance, take a moment to review the summary we have prepared.
+        </p>
+      </div>
+
+      <div class="text-center mt-10" style="max-width: 100ch;">
+        <p class="font-bold underline text-xl" style="color: #cb483b;">Covid Advisory</p>
+      </div>
+
+
+    </div>
 
   </main>
 
@@ -467,6 +341,11 @@
 
   </footer>
 
+    <script>
+      function newTab() {
+        window.open("https://us7.list-manage.com/contact-form?u=d2f48b1a88cff6c6e99a76a21&form_id=87db972654658e42376517f6d75daa1d", "_blank");
+      }
+    </script>
 
   <script src="app.js">
 
