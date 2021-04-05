@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oliveoil People</title>
+  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="navstyles3.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(window).on('load', function() {
+      $('.slider').bxSlider({
+        minSlides: 1,
+        maxSlides: 1,
+        slideWidth: 1200,
+        shrinkItems: true,
+        touchEnabled: false
+      });
+
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <header class="flex w-full h-24 overflow-hidden fixed z-50">
+
+    <nav class="flex w-full h-24 text-xl justify-around items-center overflow-hidden" style="background-color: #cecac8;">
+
+
+      <div class="flex flex-col items-center justify-center h-24 lg:w-1/4 p-4">
+        <a class="flex flex-col items-center justify-center" href="index.html">
+          <p style="color: #cb483b; font-size: 1.5em; letter-spacing: 3.5px;">oliveoilpeople</p>
+          <p style="color: #cb483b; font-size: 0.5em; letter-spacing: 5px;">SINGAPORE</p>
+        </a>
+      </div>
+
+
+      <div class="fixed lg:relative right-0 top-0 mt-24 lg:mt-0 lg:top-auto lg:right-auto h-full lg:h-24 w-1/2 lg:w-auto lg:relative flex justify-center items-center align-middle transform translate-x-full lg:translate-x-0"
+        style="transition-duration: 800ms; background-color: #cecac8;" id="menu">
+
+
+        <ul class="flex flex-col lg:flex-row justify-center items-center -mt-24 lg:mt-0 h-40 lg:h-24 navLinks lg:opacity-100">
+          <li class="lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;"><a href="shopevoo.html">SHOP
+              <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
+            </a>
+          </li>
+          <li class="mt-6 lg:mt-0 lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;">
+            <a href="tips-recipes.html">TIPS & RECIPES
+              <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
+            </a>
+          </li>
+          <li class="mt-6 lg:mt-0 lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;"><a href="tastings.html">TASTINGS
+              <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
+            </a>
+          </li>
+          <!-- <li class="mt-6 lg:mt-0 lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;">COLLABORATIONS
+            <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
+          </li> -->
+          <li class="mt-6 lg:mt-0 lg:mr-4 cursor-pointer group transform hover:-translate-y-1 duration-300 ease-in lg:opacity-100" style="color: #cb483b;"><a href="blog.html">BLOG
+              <div class="line bg-white opacity-0 group-hover:opacity-100 duration-300 ease-in" style="background-color: #cb483b;"></div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="cursor-pointer top-0 right-0 m-4 p-4 lg:hidden absolute" id="navToggle">
+        <svg class="h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+        </svg>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="py-12 px-8 lg:px-56 flex flex-col space-y-16 min-h-screen relative bg-white z-10">
+    <section class="pt-24">
+      <div class="space-y-10">
+        <h1 class="text-5xl lg:text-6xl font-bold tracking-wider">Frequently Asked Questions</h1>
+        <p class="text-xl">Everything you want to know about buying, using, and enjoying extra virgin olive oil (EVOO). If you find yourself wanting for answers after perusing what we’ve provided here, please do not hesitate to contact us.</p>
+      </div>
+    </section>
+
+    <section class="space-y-8">
+
+      <h2 class="text-4xl font-bold tracking-wider text-center lg:text-left">Health Benefits</h2>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Why is extra virgin olive oil healthier than other oils/fats?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">
+            Being the 100% natural juice of the olive fruit is what makes virgin olive oil different from other oils/fats. Extra virgin olive oil is obtained exclusively through mechanical or other physical means that do not alter
+            the oil in any way. It is oil that has not been treated in any way except for washing, centrifugation, decanting, and filtering. Seed / vegetable oil from sources such as canola, sunflower, soy, corn goes through refining processes before
+            it is fit for human consumption. Edible oil refining typically uses high heat, deodorizers, and food-grade solvents.</p>
+
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What makes extra virgin olive oil healthy?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Virgin olive oil is made up of a majority of monounsaturated fats (oleic acid mostly), which are good fats that have been known to be better for preventing
+            cardiovascular diseases and supporting the increase of good
+            cholesterol while reducing bad cholesterol. True extra virgin olive oil is loaded with healthy polyphenols that are responsible for antioxidant activity. An example is a phenol called oleocanthal, which has been shown to be an effective
+            anti-inflammatory. Furthermore, these polyphenols give extra virgin olive oil its unique flavor profiles while naturally stabilizing it, enhancing product shelf-life. Note: refined olive oil is lacking in these polyphenols as they are
+            destroyed during the refining process.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Is there an optimal amount of extra virgin olive oil to consume?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">We believe that meal compositions including the amount of oil should be tailored to the individual’s circumstances and objectives. While there is no
+            one-size-fits-all approach, the landmark study PREDIMED has shown a
+            Mediterranean diet rich with vegetables, fresh fruit, legumes, and fatty fish, supplemented with 4 tablespoons daily of extra virgin olive oil, reduced incidences of cardiovascular diseases by 30% when compared to a control group on a
+            low-fat diet.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Is it better to consume extra virgin olive oil raw?</button>
+          <p class="text-lg overflow-hidden max-h-0 pt-12 lg:pt-0" style="transition: max-height 0.2s ease;">While extra virgin olive oil is best taken raw to enjoy maximum health benefits and its wide-ranging aroma and tastes, replacing other
+            cooking oils/fats with extra virgin olive oil is a good way to ensure your overall
+            oils/fats consumption are from healthier sources.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="space-y-8">
+
+      <h2 class="text-4xl font-bold tracking-wider text-center lg:text-left">Cooking / Culinary</h2>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Is it safe to cook with extra virgin olive oil?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Yes, it is. Good quality extra virgin olive oil has a relatively high smoke point of between 190˚C and 210˚C owing to its high monounsaturated fats
+            composition. Most heat-applied cooking methods should be done at less
+            than 180˚C. As with any oils and fats, it is important not to overheat them beyond their smoke points, when they burn and produce harmful carcinogenic compounds.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Can I fry with extra virgin olive oil?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Yes, you can. Frying with olive oil is one of the oldest methods of cooking especially in the Mediterranean region. It can be said that extra virgin olive
+            oil is ideal for frying as it does not undergo substantial changes
+            when heated and retains its nutritional value better than other oils. Furthermore, frying with olive oil forms a tasty surface crust that prevents oils from penetrating the food item, making it the “lightest” way of frying with oil.</p>
+          <p>For further information about frying with olive oil, visit https://www.internationaloliveoil.org/olive-world/olive-oil/#frying</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What is olive oil matching?</button>
+          <p class="text-lg overflow-hidden max-h-0" style="transition: max-height 0.2s ease;">Olive oil matching is a culinary discipline of pairing complementary olive oils with food. Extra virgin olive oils have a wide-ranging spectrum of fruity
+            aromas, intensity of bitterness, and pepperiness. The right extra
+            virgin olive oil can enhance the dish in each course from soups through desserts. Additionally, extra virgin olive oil infused with high-quality natural ingredients like porcini mushroom, lemon rind, smoked paprika, and a myriad of other
+            options. work marvelously as marinades. Check out our Dip, Drizzle and Dare! section for recipes.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Is extra virgin olive oil suitable for Asian cooking?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Absolutely! Depending on your ingredients and cooking methods, there can be a matching EVOO or infused olive oil profile. For example, the Olivo Estate
+            with its well-structured and grassy notes is versatile in wok-fried
+            vegetables or fish dishes while the Olivo Porcini adds an elegant umami twist to your tofu marinades. Check out our Dip, Drizzle and Dare! section for recipes.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="space-y-8">
+
+      <h2 class="text-4xl font-bold tracking-wider text-center lg:text-left">New Zealand Olive Oil</h2>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Is the climate in New Zealand conducive to growing olives?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">We get asked this question often and the answer is absolutely yes! It is likely you have enjoyed a glass or two of delicious wines from New Zealand and in
+            most parts, the wine-growing climate is ideal for growing olives.
+            In fact, Martinborough where Olivo is located in, is a well-known wine-growing village with more than 20 cellar doors to visit. Visitors and residents alike enjoy exceptional wines and extra virgin olive oil side by side, rivaled only by
+            its natural breathtaking landscapes.</p>
+          <p>Visit to learn more at https://www.newzealand.com/sg/martinborough</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">How long has New Zealand been producing olive oil?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">The first known olive trees arrived on the shores of New Zealand with early European settlers as far back as 1830. Serious propagation of olive trees
+            started in 1986 with imported cuttings from Israel and Australia. By
+            the 1990’s more than 200,000 trees were planted across the country. In 1996, Olives New Zealand was established to create the environment for the New Zealand Olive industry to produce premium quality Extra Virgin Olive Oil and olive
+            products, and to market them successfully nationally and internationally. Based on Olives NZ research, there are now about 400,000 olive trees across New Zealand.</p>
+          <p>Visit https://www.olivesnz.org.nz/ to learn more.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What are the olive varietals grown in New Zealand?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">The varieties planted in New Zealand originate now from all of the main olive growing regions of the world; Italy, Spain, France, Israel, Greece. While the
+            Tuscan varietals of Frantoio and Leccino are most planted, you
+            will find other varieties such as Barnea, Koroneiki, and Manzanillo are widely grown as well. The Barnea varietal has a special place in the recorded history of New Zealand’s olive propagation in all its trials and eventual success. The
+            first cuttings of Barnea were brought in directly from Israel by the pioneering Gidon Blumenfeld and the plant scientist Professor Shimon Lavee who successfully cloned this new olive cultivar in the 1960s.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">How is New Zealand olive oil different compared to Italian, Greek or Spanish olive oils?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-16 md:translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">As with any natural produce, differences in climate and soil conditions where they are grown influence quality and taste attributes. New Zealand’s cool
+            climate produces a distinctly cool-climate oil which could be
+            considered similar to the oils produced in the more traditional, cooler climate olive growing regions like Tuscany. However, unlike the dry stony Mediterranean hillsides where olives are traditionally grown, NZ olives thrive in New
+            Zealand’s green pastureland. This provides a strong, herbaceous, grassy flavor often described as full-bodied and fruity, similar to the world-famous Sauvignon Blancs made from grapes grown in a similar environment. The long hot summers,
+            followed by cool winters, produce abundant, healthy, exceptionally tasty oil.</p>
+        </div>
+      </div>
+
+      <div class="py-8">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What makes the Wairarapa region in New Zealand unique?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">The maritime climate and soil in the Wairarapa region in the south-eastern corner of the North Island, produce distinctive and complex tasting oils. The
+            Wairarapa olive-growing area is also unique in that while about 14%
+            of New Zealand’s olive trees are grown here, owing to the commitment and passion of the many small-lot growers in this region, numerous award-winning olive oils have been produced. In 2020, Wairarapa olive oil makers swept the annual NZ
+            Extra Virgin Olive Oil Awards, winning four of the five major awards for Olive Oil Excellence.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="space-y-8">
+
+      <h2 class="text-4xl text-center lg:text-left font-bold tracking-wider">Olivo</h2>
+
+      <div class="">
+        <div class="space-y-4 text-center lg:text-left">
+          <button class="text-2xl font-semibold focus:outline-none accordion text-center lg:text-left">Who is Olivo?</button>
+          <p class="text-lg overflow-hidden max-h-0" style="transition: max-height 0.2s ease;">Olivo is the oldest commercial olive grove in the Wairarapa. It was planted in 1991 and first started producing award-winning extra virgin olive oil in
+            2001. Helen and John Meehan bought Olivo in May 2003 and have
+            extended it to 1200 olive trees; the main cultivars are Barnea, Manzanillo, Leccino, Frantoio, and Koroneiki. Their intent is to create innovative and top-quality oils that pair with excellent food and the great wines that Martinborough
+            produces – oils that are boutique, artisan, and gorgeous. Keen to expand the usage of olive oil, inspire experimentation, and position Olivo alongside food trends, they were among the first to offer infused oils including adventurous
+            infusions like fennel, smoked paprika, vanilla, cumin, saffron, and the popular lemon and porcini. Proud to be a boutique, artisan, and 100% New Zealand-owned company based in Martinborough, Wairarapa, they were recently presented the
+            ‘Best Brand Award’ by Olives New Zealand.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4 text-center lg:text-left">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Why should I buy Olivo oils?</button>
+          <p class="text-lg overflow-hidden max-h-0" style="transition: max-height 0.2s ease;">Olivo is located in Martinborough in the Wairarapa region of New Zealand where its unique maritime climate produces distinctive and complex tasting extra
+            virgin olive oils. In addition to being a grower and producer of
+            some of the best NZ extra virgin olive oils, Olivo’s Helen Meehan has mentored and consulted with numerous olive growers in our small yet dynamic community in Martinborough. For you, this means an assurance of true quality above and
+            beyond labeling authentication. You are buying directly from people who are not only passionate producers but well-respected experts and members of their community who are close to the ground.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What olive oils does Olivo produce?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Olivo offers 3 main labels of extra virgin and a wide range of infused olive oils. The extra virgin olive oils are made with olive varietals (Barnea,
+            Manzanillo, Frantoio, Leccino, Koroneiki) growing on Olivo’s grove and
+            procured from smaller (and well-cared) groves in Martinborough. Olivo also offers a wide range of adventurous infused olive oils.</p>
+          <p class="text-lg overflow-hidden max-h-0" style="transition: max-height 0.2s ease;">Visit our Shop for more details.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Where can I buy Olivo oils in Singapore?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">In addition to shopping on our website, you can find some Olivo labels at Little Farms grocery stores across Singapore. Feel free to contact us if you do
+            not find something you’d like from Olivo and we’d be more than
+            happy to arrange for you to get them.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">How is Olivo related to Olive Oil People?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">In addition to being founders of Olive Oil People (a specialty olive oil import, wholesale and e-retail business in Singapore) we own and operate a small
+            olive grove of 380 trees in Martinborough. We have supplied our
+            olive fruit yearly to Olivo since 2015, and we are on Olivo’s tree care regime. To us, Olivo’s Helen and John Meehan are mentors, business partners, and friends. We share their passion for advancing the quality, trade, and appreciation of
+            NZ olive oil.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="space-y-8">
+
+      <h2 class="text-4xl text-center lg:text-left font-bold tracking-wider">Taste Profiles</h2>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Why are there taste differences between the various EVOO?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Differences in taste profiles of EVOO are attributed to two main factors – varietals of olives and the ripeness of the olive fruit
+            when it was harvested. As an example of varietal taste differences, Barnea olives tend to
+            smell grassy and citrusy, taste greenly bitter, and not as peppery as Tuscan varietals (Frantoio, Leccino) that tend to have subtler aromas like green almonds and distinctly long peppery finish. Olives are green when they are not ripe and
+            dark brown to almost black when they are ripe. Olives can be picked green, ripe or veraison (mixture of green and ripe). Olives that are picked early in the harvest season produce oils that are “greenly-fruity” reminiscent of leaves,
+            stems, grass, generally more herbaceous and plant-like. Conversely, olives that are picked when they are riper, produce oils that are “ripely-fruity” reminiscent of ripened tomatoes, bananas or fruit compote.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Why does my EVOO taste bitter?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Bitterness in extra virgin olive oil tasting is a positive attribute. The olive fruit in its natural state is bitter and peppery. Healthy EVOO with very
+            high total polyphenol content tend to be more intensely bitter.
+            Varying intensity of bitterness can also tell us the varietal of olives the oil is made of.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Why does my EVOO taste peppery?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Pepperiness in extra virgin olive oil tasting is a positive attribute. Similar to bitterness, intense pepperiness usually indicates high total polyphenol
+            content, making the oil healthier. In fact, oleocanthal the phenol
+            that has anti-inflammatory properties tastes peppery at the back of the throat.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="space-y-8">
+
+      <h2 class="text-4xl text-center lg:text-left font-bold tracking-wider">Harvesting / Producing Olive Oil</h2>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">How is extra virgin olive oil produced?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Olive fruits are picked by hand, mechanical rakes or tree shakers and are sent to the olive press within 24 hours. At the olive press, the olives are
+            sorted to remove leaves and twigs, washed, crush with pits and all to
+            produce a paste. The paste goes through malaxation, where oil molecules clump together and concentrate. The mixture then goes through centrifugation where the olive oil, water and paste remnants are separated. The olive oil is streamed in
+            a large stainless-steel vat to be filled into olive oil containers called fusti or oil storage bladders to be sent for bottling.</p>
+          <p class="text-lg overflow-hidden max-h-0" style="transition: max-height 0.2s ease;">Learn more by watching this short video about how Olivo olive oils are made https://youtu.be/Ktp-PkMP6GA </p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4 text-center lg:text-left">
+          <button class="text-2xl font-semibold focus:outline-none accordion">When are olives harvested?</button>
+          <p class="text-lg overflow-hidden max-h-0" style="transition: max-height 0.2s ease;">Generally, olive harvest season in New Zealand happens in June, whereas in the northern hemisphere it happens between October to December. There are
+            regional differences.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="space-y-16">
+
+      <h2 class="text-4xl text-center lg:text-left font-bold tracking-wider">General Quality / Buying Guide</h2>
+
+      <div class="">
+        <div class="space-y-4 text-center lg:text-left">
+          <button class="text-2xl font-semibold focus:outline-none accordion">How is olive oil graded?</button>
+          <p class="text-lg overflow-hidden max-h-0" style="transition: max-height 0.2s ease;">Virgin olive oil may be the only food product that can only be graded when it has gone through both chemical and sensorial analysis, and not just one or
+            the other. Chemical parameters test for things such as level of
+            fermentation, oxidation, purity, and polyphenol content (the healthy good stuff in olive oil). Sensorially, IOC (International Olive Council) certified panel of tasters look for a whole spectrum of sensory parameters. Primarily to look
+            for the presence of fruity aroma and absence of defects. Olive oil can only be graded as virgin when it is fruity.</p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What standards do olive oil need to meet to be graded as extra virgin?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-16 md:translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Although the IOC (International Olive Council) sets global standards for extra virgin olive oil grading, some countries such as New Zealand set stricter
+            standards for certain key chemical parameters that support a
+            constant push for higher quality oil production. Chief among a list of at least eight chemical parameters are Free Fatty Acid (FFA) and Peroxide Value (PV), that test for the extent of fermentation and oxidation respectively. Per the IOC,
+            olive oil can only be graded as Extra Virgin when its FFA content is ≤0.8% and PV is ≤20 meq/kg. Stricter standards in New Zealand require FFA to be ≤0.5% and PV of ≤15 meq/kg. Additionally, IOC-certified panel of tasters must find both
+            the presence of Fruity aroma (>0) and absence of defect (=0). The NZ Olive Mark is given to New Zealand extra virgin olive oils when they pass the test each year. This is a round red sticker or stamp you see on Olivo bottles.</p>
+        </div>
+      </div>
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">How long can I store extra virgin olive oil?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">If unopened, follow the best before date which is usually 2 years or less from date of harvest or pressing, which you should see on your bottle labels too.
+            Once opened, it is advised to finish using the oil within 3
+            months. However, your storage conditions can determine if the oil tastes good for a longer period. In Singapore where it is hot and humid, wine chiller or cellar conditions are ideal i.e., 15˚-20˚C. If this is not possible, storing in a
+            cool, dark, and dry place would work too.</p>
+          <p class="text-lg overflow-hidden max-h-0" style="transition: max-height 0.2s ease;">Check out our Printable Tips to enjoying the benefits of extra virgin olive oil for more.</p>
+        </div>
+      </div>
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">Would infused olive oils be of lower quality as compared to EVOO?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-16 md:translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Olivo infused oils are made from top-quality extra virgin olive oil infused with high-quality natural botanicals and ingredients. The intent of offering
+            infused oils is to expand the usage of extra virgin olive oil
+            alongside food trends.</p>
+        </div>
+      </div>
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What does “cold-pressed”, “first-pressed” or “first cold-pressed” mean on a label?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-16" style="transition: max-height 0.2s ease;">These are largely obsolete terms and are technically redundant as all true extra virgin olive oil today is made from fresh olives centrifuged at low
+            temperatures. You may still find these terms on labels of
+            mass-produced olive oil for marketing purposes. In the specialty extra virgin olive oil sector, these terms are rarely used anymore on labels.</p>
+        </div>
+      </div>
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What does early-harvest mean on a label?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">Early harvest does not always indicate higher quality when compared to labels that are silent on this point. Rather it is mostly a matter of taste profile
+            and to some extent implies higher total polyphenol content.
+            Olives picked early in the season tend to contain more green fruit which produces oils that are stronger and greener tasting. Olivo oils are always made with a high proportion of greener olive fruit which makes for robust, grassy, and
+            well-structured taste profiles.</p>
+        </div>
+      </div>
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What does “light” or “extra light” olive oil mean on a label?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">You will not find these terms used by producers and growers of true extra virgin olive oil. The terms usually refer to the absence of stronger flavors of
+            natural virgin olive oil. Mass-produced olive oils that carry
+            these terms are made from blends of refined olive oil and virgin olive oil. While some may have higher smoke points for frying, they lack significantly the true health properties of extra virgin oils. </p>
+        </div>
+      </div>
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What do labels like “Pure” or “Classic” olive oil mean?</button>
+          <p class="text-lg overflow-hidden max-h-0 transform translate-y-8 lg:translate-y-0" style="transition: max-height 0.2s ease;">These are largely marketing terms that do not indicate higher quality but rather the varying strength of taste or imply the product is made from 100% olive
+            oil. As long as you do not see the words Extra Virgin or Virgin
+            on the labels, the bottle would contain blends of refined olive oil and virgin (or extra virgin oils) in varying proportions.</p>
+        </div>
+      </div>
+      <div class="">
+        <div class="space-y-4">
+          <button class="text-2xl font-semibold focus:outline-none accordion">What is refined olive oil?</button>
+          <p class="text-lg overflow-hidden max-h-0" style="transition: max-height 0.2s ease;">Most commonly, refined olive oil is virgin olive oil (not extra virgin) that has been put through refinery processes to rectify its physical and chemical
+            composition. Although, refined virgin olive oil does have to
+            comply with a standard of no more than 0.3% of free fatty acid, the refinery processes typically using high heat, solvents and deodorizers would have destroyed the oil’s natural polyphenol content.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="sticky bottom-0 top-0" style="z-index: 1;">
+
+    <!-- Desktop Footer -->
+
+    <div class="h-full w-screen hidden lg:block" style="background-color: #cecac8;">
+
+      <div class="flex w-screen justify-between">
+        <div class="m-16">
+          <ul class="flex space-x-8">
+            <a class="text-xl" style="color: #cb483b;" href="about.html">About</a>
+            <a class="text-xl" style="color: #cb483b;" href="customer-care.html">Customer Care</a>
+            <a class="text-xl" style="color: #cb483b;" href="https://us7.list-manage.com/contact-form?u=d2f48b1a88cff6c6e99a76a21&form_id=87db972654658e42376517f6d75daa1d">Contact</a>
+          </ul>
+        </div>
+
+        <div class="flex flex-col m-16">
+          <div class="">
+            <p class="text-xl" style="color: #cb483b;">Get fresh news about our growers, </p>
+            <p class="text-xl" style="color: #cb483b;">new products, recipes and useful tips.</p>
+          </div>
+
+          <div>
+            <div class="flex" id="mc_embed_signup">
+
+              <form class="flex w-full" action="https://oliveoil-people.us7.list-manage.com/subscribe/post?u=d2f48b1a88cff6c6e99a76a21&amp;id=8207dd4a96" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+
+                <div class="flex w-full" id="mc_embed_signup_scroll">
+
+                  <div class="flex justify-center items-center w-full">
+
+                    <input class="w-2/3 border-2 rounded-md p-2 placeholder-current" style="background-color: #cecac8; color: #cb483b; border-color: #cb483b; " type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email"
+                      required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d2f48b1a88cff6c6e99a76a21_8207dd4a96" tabindex="-1" value=""></div>
+                    <div class="w-1/3 h-full flex justify-center items-center"><input style="background-color: #cb483b; color: white;" type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe"
+                        class="m-4 p-3 rounded-md text-sm cursor-pointer font-light tracking-widest"></div>
+
+                  </div>
+
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+          <div class="flex space-x-2">
+            <a class="w-12" href="#">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM18.7233 11.2773C20.0886 11.2152 20.5249 11.2 24.0012 11.2H23.9972C27.4746 11.2 27.9092 11.2152 29.2746 11.2773C30.6373 11.3397 31.5679 11.5555 32.384 11.872C33.2266 12.1987 33.9386 12.636 34.6506 13.348C35.3627 14.0595 35.8 14.7736 36.128 15.6155C36.4427 16.4294 36.6587 17.3595 36.7227 18.7222C36.784 20.0876 36.8 20.5238 36.8 24.0001C36.8 27.4764 36.784 27.9116 36.7227 29.277C36.6587 30.6391 36.4427 31.5695 36.128 32.3837C35.8 33.2253 35.3627 33.9394 34.6506 34.6509C33.9394 35.3629 33.2264 35.8013 32.3848 36.1283C31.5703 36.4448 30.6391 36.6605 29.2765 36.7229C27.9111 36.7851 27.4762 36.8003 23.9996 36.8003C20.5236 36.8003 20.0876 36.7851 18.7222 36.7229C17.3598 36.6605 16.4294 36.4448 15.615 36.1283C14.7736 35.8013 14.0595 35.3629 13.3483 34.6509C12.6365 33.9394 12.1992 33.2253 11.872 32.3834C11.5557 31.5695 11.34 30.6394 11.2773 29.2767C11.2155 27.9114 11.2 27.4764 11.2 24.0001C11.2 20.5238 11.216 20.0873 11.2771 18.7219C11.3384 17.3598 11.5544 16.4294 11.8717 15.6152C12.1997 14.7736 12.6371 14.0595 13.3491 13.348C14.0606 12.6363 14.7747 12.1989 15.6166 11.872C16.4305 11.5555 17.3606 11.3397 18.7233 11.2773Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22.853 13.5067C23.0759 13.5064 23.3158 13.5065 23.5746 13.5066L24.0013 13.5067C27.4189 13.5067 27.824 13.519 29.1736 13.5803C30.4216 13.6374 31.0989 13.8459 31.5501 14.0211C32.1475 14.2531 32.5733 14.5305 33.0211 14.9785C33.4691 15.4265 33.7464 15.8532 33.979 16.4505C34.1542 16.9012 34.363 17.5785 34.4198 18.8265C34.4811 20.1759 34.4944 20.5812 34.4944 23.9972C34.4944 27.4133 34.4811 27.8186 34.4198 29.168C34.3627 30.416 34.1542 31.0933 33.979 31.544C33.747 32.1413 33.4691 32.5667 33.0211 33.0144C32.5731 33.4624 32.1477 33.7398 31.5501 33.9718C31.0995 34.1478 30.4216 34.3558 29.1736 34.4128C27.8242 34.4742 27.4189 34.4875 24.0013 34.4875C20.5834 34.4875 20.1783 34.4742 18.8289 34.4128C17.5809 34.3552 16.9036 34.1467 16.4521 33.9715C15.8548 33.7395 15.4281 33.4621 14.9801 33.0141C14.5321 32.5661 14.2548 32.1405 14.0222 31.5429C13.847 31.0923 13.6382 30.4149 13.5814 29.1669C13.5201 27.8176 13.5078 27.4122 13.5078 23.994C13.5078 20.5759 13.5201 20.1727 13.5814 18.8233C13.6385 17.5753 13.847 16.898 14.0222 16.4468C14.2542 15.8494 14.5321 15.4228 14.9801 14.9748C15.4281 14.5268 15.8548 14.2494 16.4521 14.0169C16.9033 13.8409 17.5809 13.6329 18.8289 13.5755C20.0097 13.5222 20.4674 13.5062 22.853 13.5035V13.5067ZM30.8339 15.6321C29.9859 15.6321 29.2978 16.3193 29.2978 17.1676C29.2978 18.0156 29.9859 18.7036 30.8339 18.7036C31.6819 18.7036 32.3699 18.0156 32.3699 17.1676C32.3699 16.3196 31.6819 15.6316 30.8339 15.6316V15.6321ZM17.4279 24.0002C17.4279 20.3701 20.3709 17.4269 24.001 17.4268C27.6312 17.4268 30.5736 20.37 30.5736 24.0002C30.5736 27.6304 27.6314 30.5723 24.0013 30.5723C20.3711 30.5723 17.4279 27.6304 17.4279 24.0002Z"
+                  fill="black" />
+                <path d="M24.0012 19.7334C26.3575 19.7334 28.2679 21.6436 28.2679 24.0001C28.2679 26.3564 26.3575 28.2668 24.0012 28.2668C21.6447 28.2668 19.7345 26.3564 19.7345 24.0001C19.7345 21.6436 21.6447 19.7334 24.0012 19.7334Z"
+                  fill="black" />
+              </svg>
+            </a>
+
+            <a class="w-12" href="#">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM26.5016 25.0542V38.1115H21.0991V25.0547H18.4V20.5551H21.0991V17.8536C21.0991 14.1828 22.6231 12 26.9532 12H30.5581V16.5001H28.3048C26.6192 16.5001 26.5077 17.1289 26.5077 18.3025L26.5016 20.5546H30.5836L30.1059 25.0542H26.5016Z"
+                  fill="black" />
+              </svg>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="w-screen h-full flex justify-center my-2">
+        <div class="w-11/12 h-1 border-t-2 border-opacity-100 self-center" style="background-color: #cb483b;">
+        </div>
+
+      </div>
+
+      <div class="w-screen h-full flex justify-start">
+        <div class="w-full h-full flex mx-16 mt-2 mb-12 space-x-10">
+          <a style="color: #cb483b;" href="terms-of-service.html">Terms of service</a>
+          <a style="color: #cb483b;" href="privacy-policy.html">Privacy policy</a>
+        </div>
+      </div>
+
+      <div class="w-screen flex justify-center items-center">
+        <p class="mb-4" style="color: #cb483b;">© Olive Oil People Pte. Ltd.</p>
+      </div>
+
+    </div>
+
+    <!-- Mobile Footer -->
+
+    <div class="h-screen w-screen block lg:hidden" style="background-color: #cecac8;">
+
+      <div class="h-full w-full flex flex-col justify-center items-center">
+        <div class="p-16">
+          <p class="text-center text-lg" style="color: #cb483b;">Get fresh news about our growers, new products, recipes and useful tips.</p>
+        </div>
+
+        <div class="">
+          <div class="flex" id="mc_embed_signup">
+
+            <form class="flex w-full" action="https://oliveoil-people.us7.list-manage.com/subscribe/post?u=d2f48b1a88cff6c6e99a76a21&amp;id=8207dd4a96" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank" novalidate>
+
+              <div class="flex w-full" id="mc_embed_signup_scroll">
+
+                <div class="flex flex-col justify-center items-center w-full">
+
+                  <input class="w-48 border-2 rounded-md p-2 placeholder-current text-center" style="background-color: #cecac8; color: #cb483b; border-color: #cb483b; " type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                    placeholder="Your email" required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d2f48b1a88cff6c6e99a76a21_8207dd4a96" tabindex="-1" value=""></div>
+                  <div class="w-full h-full flex justify-center items-center"><input style="background-color: #cb483b; color: white;" type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe"
+                      class="w-48 m-4 p-3 rounded-md text-sm cursor-pointer font-light tracking-widest"></div>
+
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="">
+          <ul class="flex flex-col justify-center items-center space-y-4">
+            <a class="text-lg" style="color: #cb483b;" href="about.html">About</a>
+            <a class="text-lg" style="color: #cb483b;" href="customer-care.html">Customer Care</a>
+            <a class="text-lg" style="color: #cb483b;" href="https://us7.list-manage.com/contact-form?u=d2f48b1a88cff6c6e99a76a21&form_id=87db972654658e42376517f6d75daa1d">Contact</a>
+          </ul>
+        </div>
+
+        <div class="flex space-x-2 mt-8 mb-4">
+          <a class="w-12" href="#">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM18.7233 11.2773C20.0886 11.2152 20.5249 11.2 24.0012 11.2H23.9972C27.4746 11.2 27.9092 11.2152 29.2746 11.2773C30.6373 11.3397 31.5679 11.5555 32.384 11.872C33.2266 12.1987 33.9386 12.636 34.6506 13.348C35.3627 14.0595 35.8 14.7736 36.128 15.6155C36.4427 16.4294 36.6587 17.3595 36.7227 18.7222C36.784 20.0876 36.8 20.5238 36.8 24.0001C36.8 27.4764 36.784 27.9116 36.7227 29.277C36.6587 30.6391 36.4427 31.5695 36.128 32.3837C35.8 33.2253 35.3627 33.9394 34.6506 34.6509C33.9394 35.3629 33.2264 35.8013 32.3848 36.1283C31.5703 36.4448 30.6391 36.6605 29.2765 36.7229C27.9111 36.7851 27.4762 36.8003 23.9996 36.8003C20.5236 36.8003 20.0876 36.7851 18.7222 36.7229C17.3598 36.6605 16.4294 36.4448 15.615 36.1283C14.7736 35.8013 14.0595 35.3629 13.3483 34.6509C12.6365 33.9394 12.1992 33.2253 11.872 32.3834C11.5557 31.5695 11.34 30.6394 11.2773 29.2767C11.2155 27.9114 11.2 27.4764 11.2 24.0001C11.2 20.5238 11.216 20.0873 11.2771 18.7219C11.3384 17.3598 11.5544 16.4294 11.8717 15.6152C12.1997 14.7736 12.6371 14.0595 13.3491 13.348C14.0606 12.6363 14.7747 12.1989 15.6166 11.872C16.4305 11.5555 17.3606 11.3397 18.7233 11.2773Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22.853 13.5067C23.0759 13.5064 23.3158 13.5065 23.5746 13.5066L24.0013 13.5067C27.4189 13.5067 27.824 13.519 29.1736 13.5803C30.4216 13.6374 31.0989 13.8459 31.5501 14.0211C32.1475 14.2531 32.5733 14.5305 33.0211 14.9785C33.4691 15.4265 33.7464 15.8532 33.979 16.4505C34.1542 16.9012 34.363 17.5785 34.4198 18.8265C34.4811 20.1759 34.4944 20.5812 34.4944 23.9972C34.4944 27.4133 34.4811 27.8186 34.4198 29.168C34.3627 30.416 34.1542 31.0933 33.979 31.544C33.747 32.1413 33.4691 32.5667 33.0211 33.0144C32.5731 33.4624 32.1477 33.7398 31.5501 33.9718C31.0995 34.1478 30.4216 34.3558 29.1736 34.4128C27.8242 34.4742 27.4189 34.4875 24.0013 34.4875C20.5834 34.4875 20.1783 34.4742 18.8289 34.4128C17.5809 34.3552 16.9036 34.1467 16.4521 33.9715C15.8548 33.7395 15.4281 33.4621 14.9801 33.0141C14.5321 32.5661 14.2548 32.1405 14.0222 31.5429C13.847 31.0923 13.6382 30.4149 13.5814 29.1669C13.5201 27.8176 13.5078 27.4122 13.5078 23.994C13.5078 20.5759 13.5201 20.1727 13.5814 18.8233C13.6385 17.5753 13.847 16.898 14.0222 16.4468C14.2542 15.8494 14.5321 15.4228 14.9801 14.9748C15.4281 14.5268 15.8548 14.2494 16.4521 14.0169C16.9033 13.8409 17.5809 13.6329 18.8289 13.5755C20.0097 13.5222 20.4674 13.5062 22.853 13.5035V13.5067ZM30.8339 15.6321C29.9859 15.6321 29.2978 16.3193 29.2978 17.1676C29.2978 18.0156 29.9859 18.7036 30.8339 18.7036C31.6819 18.7036 32.3699 18.0156 32.3699 17.1676C32.3699 16.3196 31.6819 15.6316 30.8339 15.6316V15.6321ZM17.4279 24.0002C17.4279 20.3701 20.3709 17.4269 24.001 17.4268C27.6312 17.4268 30.5736 20.37 30.5736 24.0002C30.5736 27.6304 27.6314 30.5723 24.0013 30.5723C20.3711 30.5723 17.4279 27.6304 17.4279 24.0002Z"
+                fill="black" />
+              <path d="M24.0012 19.7334C26.3575 19.7334 28.2679 21.6436 28.2679 24.0001C28.2679 26.3564 26.3575 28.2668 24.0012 28.2668C21.6447 28.2668 19.7345 26.3564 19.7345 24.0001C19.7345 21.6436 21.6447 19.7334 24.0012 19.7334Z" fill="black" />
+            </svg>
+          </a>
+
+          <a class="w-12" href="#">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM26.5016 25.0542V38.1115H21.0991V25.0547H18.4V20.5551H21.0991V17.8536C21.0991 14.1828 22.6231 12 26.9532 12H30.5581V16.5001H28.3048C26.6192 16.5001 26.5077 17.1289 26.5077 18.3025L26.5016 20.5546H30.5836L30.1059 25.0542H26.5016Z"
+                fill="black" />
+            </svg>
+          </a>
+
+        </div>
+
+        <div class="m-4 flex flex-col justify-center items-center">
+          <div class="flex flex-col justify-center items-center">
+            <a style="color: #cb483b;" href="terms-of-service.html">Terms of service</a>
+            <a style="color: #cb483b;" href="privacy-policy.html">Privacy policy</a>
+          </div>
+        </div>
+
+        <div class="w-screen flex justify-center items-center">
+          <p class="mt-6" style="color: #cb483b;">© Olive Oil People Pte. Ltd.</p>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+  </footer>
+
+  <script src="app.js">
+
+  </script>
+
+</body>
