@@ -61,7 +61,7 @@
     </nav>
 
     <div class="w-full" style="background-color: #B99E56;">
-      <p class="text-white text-center">Enjoy free shipping for purchases of S$120 & above. Receive your products within 3 days. Singapore mainland only.</p>
+      <p class="text-white text-center">Enjoy free shipping for purchases of S$120 & above. Receive your products within 3 days. Singapore island only.</p>
     </div>
 
   </header>
@@ -102,9 +102,14 @@
           <p class="tracking-wide">June 2020</p>
         </div>
 
-        <div class="flex justify-center items-center mt-8">
+        <div class="">
+          <p class="text-center font-bold mt-6">200ml</p>
+        </div>
 
-          <div id='product-component-1611594959266'></div>
+
+        <div class="flex justify-center items-center mt-2">
+
+          <div id='product-component-1611650383850'></div>
           <script type="text/javascript">
           /*<![CDATA[*/
           (function () {
@@ -133,7 +138,7 @@
               ShopifyBuy.UI.onReady(client).then(function (ui) {
                 ui.createComponent('product', {
                   id: '6245127061697',
-                  node: document.getElementById('product-component-1611594959266'),
+                  node: document.getElementById('product-component-1611650383850'),
                   moneyFormat: '%24%7B%7Bamount%7D%7D',
                   options: {
             "product": {
@@ -144,13 +149,27 @@
                     "margin-left": "20px",
                     "margin-bottom": "50px"
                   }
+                },
+                "price": {
+                  "font-size": "16px",
+                  "color": "#000000"
+                },
+                "compareAt": {
+                  "font-size": "13.6px",
+                  "color": "#000000"
+                },
+                "unitPrice": {
+                  "font-size": "13.6px",
+                  "color": "#000000"
                 }
               },
+
               "contents": {
                 "img": false,
                 "title": false,
-                "price": false
+                "price": true,
               },
+
               "text": {
                 "button": "Add to cart"
               }
